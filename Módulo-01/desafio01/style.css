@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(194, 239, 239);
+    margin: 0;
+    padding: 15px;
+    font-family: sans-serif;
+}
+
+h1,
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    background-color: rgb(138, 214, 214);
+}
+
+.item {
+    float: left;
+    width: 400px;
+    font-size: large;
+    text-align: center;
+}
+
+.des {
+    color: rgb(223, 74, 51);
+}
+
