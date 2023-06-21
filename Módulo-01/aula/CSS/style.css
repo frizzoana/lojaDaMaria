@@ -2,12 +2,13 @@
     margin: 0;
     padding: 0;
     /* color: green !important; */
-    color: rgb(59, 52, 52);
+    color: #999;
     list-style-type: none;
     text-decoration: none;
 }
 
-h1 {
+#principal h1 {
+    color: 5d3364;
     font-size: 36px;
     font-family: 'Lato', sans-serif;
     padding-top: 10px;
@@ -17,8 +18,12 @@ h1 {
 #cabecalho {
     width: 100%;
     height: 120px;
-    background-color: rgb(224, 21, 170);
+    background-color: #ba67c8;
     text-align: center;
+}
+
+#logo img {
+    margin-top: 16px;
 }
 
 .container {
@@ -26,34 +31,36 @@ h1 {
     margin: auto;
 }
 
-h2 {
+#produtos h2 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-h3,
-p,
-a {
+#principal h3, p, a{
     margin-top: 15px;
 }
 
-p {
-font-size: px;
+#listadeprodutos { 
+    display: flex;
+    margin: auto;
 }
 
 .produto {
-    width: 350px;
-    margin-left: 15px;
-    border: 1px solid gray;
-    margin: 10px; /*metade do padding pois junta a margem de dois elementos */
+    -webkit-box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0, 04);
     padding: 20px;
     text-align: center;
-    border-radius: 15px;
+}
+
+.produto h3{
+    font-family: ;
+    font-size: 21px;
+    margin-top: 15px;
+    color: #3c4e58;
 }
 
 .preco {
-    font-weight: bold;
-    color: rgb(34, 124, 220);
     font-size: 1.5rem;
 }
 
@@ -61,7 +68,7 @@ font-size: px;
     display: flex;
     margin-top: 20px;
     width: calc(100px-30px);
-    background-color: rgb(224, 21, 170);
+    background-color: #ba67c8;
     padding: 15px;
     justify-content: center;
 }
@@ -71,7 +78,70 @@ font-size: px;
     margin: auto;
 }
 
-img {
+.produto img {
     width: 100%;
-    border-radius: 15px;
+}
+
+#quem-somos{
+    display: flex;
+    margin-top: 70px;
+    width: 1140px;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+#quem-somos-img{
+    width: 400px;
+    height: 400px;
+    margin-right: 20px;
+    
+}
+
+#quem-somos-section{
+    margin-right: 40px;
+}
+
+#text-article{
+    width: 70%;
+    color: #363636;
+}
+
+#btn-more-info{
+    background-color: #ba67c8;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: #5e3964;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 80px;
+    
+}
+
+.colunas{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 60px;
+    padding-top: 30px;
+    color: #fff;
+}
+
+.footer-content, p, label{
+    color: #fff;
+}
+
+.topicos-footer{
+    color: #fff;
+}
+
+.btn-footer{
+    margin: -8px;
+    padding:0px 10px ;
+    border: none;
+    background-color: #ba67c8;
+    color: #fff;
 }

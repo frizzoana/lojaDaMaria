@@ -2,70 +2,121 @@
 <html lang="pt-br">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lojinha de trico</title>
+    <!--Meu CSS-->
     <link rel="stylesheet" href="./CSS/style.css" />
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--Bootstrap javascript-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div id="cabecalho">
+    <header id="cabecalho">
         <div class="container">
             <div id="logo">
-                <h1>Trico da Maria</h1>
+                <img src="./IMG/logo-lojinha (1).svg" alt="logo" width="300">
             </div>
             <div id="menu"></div>
         </div>
 
-    </div>
+    </header>
 
-    <div id="principal">
+    <main id="principal">
         <div class="container">
-
             <h1>Bem-vindo a loja de trico da Maria</h1>
             <p>Roupas de qualidade e feitas a mão</p>
 
-            <h2>Lista de Produtos</h2>
-            <ul id="listadeprodutos">
-                <li>
-                    <div class="produto">
-                        <img src="./IMG/blusaolivia.jpg" alt="blusa de trico olivia">
-                        <h3>Blusa Olívia</h3>
-                        <p class="preco">R$39,90</p>
-                        <a class="botao" href="https://api.whatsapp.com/send?phone=5511980852650">click para
-                            informações</a>
-                    </div>
-                </li>
+            <section id="produtos">
+                <h2>Lista de Produtos</h2>
+                <!--MINHA LISTA-->
+                <ul class="row">
+                    <li class="col-lg-4 col-sm-12">
+                        <div class="produto">
+                            <img src="./IMG/blusaolivia.jpg" alt="blusa de trico olivia">
+                            <h3>Blusa Olívia</h3>
+                            <p class="preco">R$39,90</p>
+                            <a class="botao" href="https://api.whatsapp.com/send?phone=5511980852650">click para
+                                informações</a>
+                        </div>
+                    </li>
 
-                <li>
-                    <div class="produto">
-                        <img src="./IMG/safira.jpg" alt="blusa de trico safira">
-                        <h3>Blusa Safira</h3>
-                        <p class="preco">R$39,90</p>
-                        <a class="botao" href="https://api.whatsapp.com/send?phone=5511980852650">click para
-                            informações</a>
-                    </div>
-                </li>
+                    <li class="col-lg-4 col-sm-12">
+                        <div class="produto">
+                            <img src="./IMG/safira.jpg" alt="blusa de trico safira">
+                            <h3>Blusa Safira</h3>
+                            <p class="preco">R$39,90</p>
+                            <a class="botao" href="https://api.whatsapp.com/send?phone=5511980852650">click para
+                                informações</a>
+                        </div>
+                    </li>
 
-                <li>
-                    <div class="produto">
-                        <img src="./IMG/roupapet.jpg" alt="roupa de pet">
-                        <h3>Roupa de Pet</h3>
-                        <p class="preco">R$39,90</p>
-                        <a class="botao" href="https://api.whatsapp.com/send?phone=5511980852650">click para
-                            informações</a>
-                    </div>
+                    <li class="col-lg-4 col-sm-12">
+                        <div class="produto">
+                            <img src="./IMG/roupapet.jpg" alt="roupa de pet">
+                            <h3>Roupa de Pet</h3>
+                            <p class="preco">R$39,90</p>
+                            <a class="botao" href="https://api.whatsapp.com/send?phone=5511980852650">click para
+                                informações</a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="quem-somos">
+                <div id="quem-somos-section">
+                    <img src="./IMG/quem-somos.png" alt="Quem somos..." id="quem-somos-img">
+                </div>
+
+                <article id="quem-somos-content">
+                    <h2>Quem é Maria?</h2>
+                    <p id="text-article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti libero autem praesentium fuga totam velit consequuntur deserunt, similique odit non soluta quos voluptatem. Cupiditate asperiores itaque ab atque quasi recusandae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti libero autem praesentium fuga totam velit consequuntur deserunt, similique odit non soluta quos voluptatem. Cupiditate asperiores itaque ab atque quasi recusandae</p>
+                    <a href="" type="submit" id="btn-more-info">Leia mais</a>
+                </article>
+                
+            </section>
+
+        </div>
+    </main>
+
+    <footer id="rodape">
+        <div class="footer-colunas">
+            <ul class="colunas">
+                <li class="footer-content">
+                    <h2>Endereço</h2>
+                    <p>Rua dos Eucaliptos, 345<br>
+                    <p>Bairro Floresta | Cidade Feliz -SP</p>
+                    </p>
+                </li>
+                <li class="footer-content">
+                    <h2>Links</h2>
+                    <a class="topicos-footer" href="#">Todos os produtos</a> <br>
+                    <a class="topicos-footer" href="#">Fale Conosco</a> <br>
+                    <a class="topicos-footer" href="#">Mapa do site</a>
+                </li>
+                <li class="footer-content">
+                    <h2>Newletter</h2>
+                    <label>cadastre-se para receber ofertas e novidades!</label><br>
+                    <input type="email"  placeholder="Digite seu e-mail...">
+                    <button class="btn-footer">Enviar</button>
                 </li>
             </ul>
         </div>
-    </div>
-
-    <div id="rodapé">
-
-    </div>
+    </footer>
 </body>
 
 </html>
