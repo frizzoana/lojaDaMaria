@@ -26,6 +26,20 @@
     margin-top: 16px;
 }
 
+#menu {
+
+}
+
+#menu ul {
+    display: flex;
+    justify-content: end;
+    padding-top: 48px;
+}
+
+#menu ul li{
+     padding-left: 36px; /*separa um item de outro | direita, esquerda*/
+} 
+
 .container {
     width: 1140px;
     margin: auto;
@@ -36,11 +50,13 @@
     margin-bottom: 10px;
 }
 
-#principal h3, p, a{
+#principal h3,
+#principal p,
+#principal a {
     margin-top: 15px;
 }
 
-#listadeprodutos { 
+#listadeprodutos {
     display: flex;
     margin: auto;
 }
@@ -53,8 +69,7 @@
     text-align: center;
 }
 
-.produto h3{
-    font-family: ;
+.produto h3 {
     font-size: 21px;
     margin-top: 15px;
     color: #3c4e58;
@@ -71,6 +86,14 @@
     background-color: #ba67c8;
     padding: 15px;
     justify-content: center;
+    color: white;
+}
+
+.botao:hover {
+    color: #fff;
+    background-color: #5e3964;
+    text-decoration: none;
+    transition: background-color 1s;
 }
 
 #listadeprodutos {
@@ -82,47 +105,45 @@
     width: 100%;
 }
 
-#quem-somos{
+#quem-somos {
     display: flex;
     margin-top: 70px;
     width: 1140px;
     margin-left: 10%;
     margin-right: 10%;
-    
 }
 
-#quem-somos-img{
+#quem-somos-img {
     width: 400px;
     height: 400px;
     margin-right: 20px;
-    
+
 }
 
-#quem-somos-section{
+#quem-somos-section {
     margin-right: 40px;
 }
 
-#text-article{
+#text-article {
     width: 70%;
     color: #363636;
 }
 
-#btn-more-info{
+#btn-more-info {
     background-color: #ba67c8;
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
 }
 
-footer{
+footer {
     background-color: #5e3964;
     margin-top: 50px;
     padding-top: 10px;
     padding-bottom: 80px;
-    
 }
 
-.colunas{
+.colunas {
     display: flex;
     justify-content: space-around;
     margin: 0px 60px;
@@ -130,17 +151,19 @@ footer{
     color: #fff;
 }
 
-.footer-content, p, label{
+.footer-content,
+.footer-content p,
+.footer-content label {
     color: #fff;
 }
 
-.topicos-footer{
+.topicos-footer {
     color: #fff;
 }
 
-.btn-footer{
+.btn-footer {
     margin: -8px;
-    padding:0px 10px ;
+    padding: 0px 10px;
     border: none;
     background-color: #ba67c8;
     color: #fff;
