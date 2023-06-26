@@ -26,19 +26,22 @@
     margin-top: 16px;
 }
 
-#menu {
-
-}
-
 #menu ul {
     display: flex;
     justify-content: end;
     padding-top: 48px;
 }
 
-#menu ul li{
-     padding-left: 36px; /*separa um item de outro | direita, esquerda*/
-} 
+#menu ul li {
+    padding-left: 36px;
+
+}
+
+#menu ul li a {
+    color: #ffffff;
+    height: 24px;
+    padding-bottom: 4px;
+}
 
 .container {
     width: 1140px;
@@ -167,4 +170,32 @@ footer {
     border: none;
     background-color: #ba67c8;
     color: #fff;
+}
+
+@media(max-width: 768px) {
+    #principal h1 {
+        font-size: 32px;
+        text-align: center;
+        line-height: 48px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #logo img {
+        width: 250px;
+    }
+
+    #principal p {
+        text-align: center;
+    }
+
+    #menu {
+        background-color: #5e3964;
+    }
+
+    #menu ul {
+        justify-content: space-between;
+    }
+
+    #menu ul li {}
 }
