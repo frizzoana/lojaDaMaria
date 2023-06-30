@@ -50,57 +50,29 @@
     <div class="fundo">
         <main id="principal">
             <div class="container">
-                <h1>Bem-vindo a Casa Animal</h1>
-                <p>Aqui você encontra tudo para o seu pet.</p>
-
-                <section id="produtos">
-                    <ul class="row">
-                        <li class="col-lg-4 col-sm-12">
-                            <div class="produto">
-                                <img src="./IMG/brinquedo-de-corda.webp" alt="brinquedo-de-corda">
-                                <h3>Brinquedo de corda</h3>
-                                <p class="preco">R$7,99</p>
-                                <a class="botao" href="https://api.whatsapp.com/send?phone=5511980852650">COMPRAR</a>
-                            </div>
-                        </li>
-
-                        <li class="col-lg-4 col-sm-12">
-                            <div class="produto">
-                                <img src="./IMG/brinquedo-inteligente.jpg" alt="brinquedo-inteligente">
-                                <h3>Brinquedo inteligente</h3>
-                                <p class="preco">R$14,99</p>
-                                <a class="botao" href="https://api.whatsapp.com/send?phone=5511980852650">COMPRAR</a>
-                            </div>
-                        </li>
-
-                        <li class="col-lg-4 col-sm-12">
-                            <div class="produto">
-                                <img src="./IMG/pelucia.webp" alt="pelucia">
-                                <h3>Pelucia</h3>
-                                <p class="preco">R$11,99</p>
-                                <a class="botao" href="https://api.whatsapp.com/send?phone=5511980852650">COMPRAR</a>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-
-                <section id="quem-somos">
-                        <div id="quem-somos-section col-lg-4 col-sm-12">
-                            <img src="./IMG/pets.webp" alt="Quem somos..." id="quem-somos-img">
-                        </div>
-
-                        <div id="quem-somos-content col-lg-4 col-sm-12">
-                            <h2>Quem Somos?</h2>
-                            <p id="text-article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-                                libero
-                                autem
-                                praesentium
-                                fuga totam velit consequuntur deserunt.
-                            </p>
-                            <a href="#" type="submit" id="btn-more-info">Leia mais</a>
-                        </div>
-                </section>
-
+                <form id="form-contato">
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Senha</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress">O que achou da sua compra?</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="Gostai muito, compraria de novo...">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress2">Oque podemos melhorar para melhorar seu próximo atendmento?</label>
+                      <input type="text" class="form-control" id="inputAddress2" placeholder="preços, produtos, entrega...">
+                    </div>
+                    <div class="form-group">
+                    </div>
+                    <button type="submit" class="btn btn-contato">Entrar</button>
+                  </form>
             </div>
         </main>
 
